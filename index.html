@@ -7,128 +7,125 @@
   </head>
   <body>
     <div class="calculator">
-        <div class="display">
-            <div class="history"></div>
-            <div class="result"></div>
-            </div>
-      
-        <div class="buttons">
-          <button class="btn">C</button>
-          <button class="btn">/</button>
-          <button class="btn">*</button>
-          <button class="btn">delete</button>
+      <div class="display">
+        <div class="history"></div>
+        <div class="result"></div>
+      </div>
 
-          <button class="btn">7</button>
-          <button class="btn">8</button>
-          <button class="btn">9</button>
-          <button class="btn">-</button>
+      <div class="buttons">
+        <button class="btn">C</button>
+        <button class="btn">/</button>
+        <button class="btn">*</button>
+        <button class="btn">delete</button>
 
-          <button class="btn">4</button>
-          <button class="btn">5</button>
-          <button class="btn">6</button>
-          <button class="btn">+</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">-</button>
 
-          <button class="btn">1</button>
-          <button class="btn">2</button>
-          <button class="btn">3</button>
-          <button class="equal">=</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">+</button>
 
-          <button class="btn">%</button>
-          <button class="btn">0</button>
-          <button class="btn">.</button>
-        </div>
-    
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="equal">=</button>
+
+        <button class="btn">%</button>
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 
   <style>
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: rgb(180, 173, 173);
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(180, 173, 173);
     }
-    .calculator{
-        padding: 20px;
-        width: 300px;
-        background: #1e1e1e;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px
-
+    .calculator {
+      padding: 20px;
+      width: 300px;
+      background: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px;
     }
-    .display{
-        text-align: right;
-        padding: 30px;
-        background-color: #373131;
-        border-radius: 5px;
-        margin-bottom: 10px;
+    .display {
+      text-align: right;
+      padding: 30px;
+      background-color: #373131;
+      border-radius: 5px;
+      margin-bottom: 10px;
     }
-    .history{
-        font-size: 10px;
-        color: rgb(207, 200, 200);
+    .history {
+      font-size: 10px;
+      color: rgb(207, 200, 200);
     }
-    .result{
-        font-size: 14px;
-        color: rgb(248, 244, 244);
+    .result {
+      font-size: 14px;
+      color: rgb(248, 244, 244);
     }
-    .buttons{
-        display: grid;
-        grid-template-columns:repeat(4, 1fr);
-        gap: 5px;
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
     }
-    .btn{
-        background: #333;
-        color: white;
-        border: none;
-        padding: 15px;
-        font-size: 18px;
-        border-radius: 5px;
-        cursor: pointer;
-        
+    .btn {
+      background: #333;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    .btn:hover{
-        background: #444;
+    .btn:hover {
+      background: #444;
     }
-    .equal{
-        background-color: #ffb300;
-        color: black;
-        grid-row: span 2;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 25px;
-        color: white;
+    .equal {
+      background-color: #ffb300;
+      color: black;
+      grid-row: span 2;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 25px;
+      color: white;
     }
-    button:nth-child(1){
-        color: #ffb300;
-        background-color: #525151;
-    } 
-    button:nth-child(2){
-        color: #ffb300;
-        background-color: #525151;
+    button:nth-child(1) {
+      color: #ffb300;
+      background-color: #525151;
     }
-    button:nth-child(3){
-        color: #ffb300;
-        background-color: #525151;
+    button:nth-child(2) {
+      color: #ffb300;
+      background-color: #525151;
     }
-    button:nth-child(4){
-        color: #ffb300;
-        background-color: #525151;
+    button:nth-child(3) {
+      color: #ffb300;
+      background-color: #525151;
     }
-    button:nth-child(8){
-        color: #ffb300;
-        background-color: #525151;
+    button:nth-child(4) {
+      color: #ffb300;
+      background-color: #525151;
     }
-    button:nth-child(12){
-        color: #ffb300;
-        background-color: #525151;
+    button:nth-child(8) {
+      color: #ffb300;
+      background-color: #525151;
+    }
+    button:nth-child(12) {
+      color: #ffb300;
+      background-color: #525151;
     }
   </style>
 </html>
