@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (value === "C") {
                 history = "";
                 currentInput = "";
-            } else if (value === "delete") {
+            } else if (value === "⌫") {
                 currentInput = currentInput.slice(0, -1);
             } else if (value === "%") {
                 if (currentInput !== "") {
