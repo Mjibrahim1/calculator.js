@@ -16,17 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // Handle button clicks
     buttons.forEach((button) => {
         button.addEventListener("click", function () {
-            const value = button.textContent;
+            let value = button.textContent;
 
             if (value === "C") {
                 history = "";
                 currentInput = "";
-            } else if (value === "⌫") {
+            } else if (value === "⌫") { // Backspace (delete last character)
                 currentInput = currentInput.slice(0, -1);
             } else if (value === "%") {
                 if (currentInput !== "") {
                     currentInput = (parseFloat(currentInput) / 100).toString();
                 }
+            } else if (value === "÷") { // Convert division sign
+                currentInput += "/";
+            } else if (value === "×") { // Convert multiplication sign
+                currentInput += "*";
             } else {
                 currentInput += value;
             }
