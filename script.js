@@ -23,12 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 currentInput = "";
             } else if (value === "delete") {
                 currentInput = currentInput.slice(0, -1);
-            } else if (value === "=") {
-                try {
-                    history = currentInput;
-                    currentInput = eval(currentInput);
-                } catch (error) {
-                    currentInput = "Error";
+            } else if (value === "%") {
+                if (currentInput !== "") {
+                    currentInput = (parseFloat(currentInput) / 100).toString();
                 }
             } else {
                 currentInput += value;
